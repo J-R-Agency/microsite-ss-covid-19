@@ -188,6 +188,12 @@ address{
 
 }
 
+.hero__img{
+
+	display: block;
+
+}
+
 .testimonial{
 
 }
@@ -195,7 +201,7 @@ address{
 .testimonial blockquote{
 
 	font-weight: 300;
-	font-size: 2.625rem;
+	font-size: 1.3125rem;
 	line-height: 1.3125;
 
 }
@@ -405,11 +411,18 @@ a.contact__btn{
 	}
 
 	.hero{
+
 		background-image: none;
+
+	}
+	.hero__body{
+
+		padding: 0;
+
 	}
 	.hero__title, .hero__body h1{
 
-		margin:0;
+		margin: 0;
 		padding: 2rem 0;
 
 	}
@@ -417,6 +430,12 @@ a.contact__btn{
 
 		margin: 0;
 		padding: 2rem 2rem;
+
+	}
+	.hero__img {
+
+		margin: 2rem -50% 0 -50%;
+	 	width: 100vh;
 
 	}
 
@@ -429,7 +448,7 @@ a.contact__btn{
 
 	.testimonial blockquote{
 
-		font-size: 1.75rem;
+		font-size: 1.3125rem;
 		margin: 2.5rem 0 1rem 0;
 
 	}
@@ -524,7 +543,7 @@ a.contact__btn{
 
 		background-color: #703d9a;
 		background-image: url('../assets/bg/bg-keyline-white-a.png');
-		background-position: left -30% top 0px;
+		background-position: left -70% top 0px;
 		background-repeat: no-repeat;
 
 	}
@@ -539,10 +558,23 @@ a.contact__btn{
 
 	.hero__img {
 
-	 	width: 100%;
+	 	width: 80vw;
 
 	}
 
+
+	.testimonial blockquote{
+
+		font-size: 1.5rem;
+		line-height: 1.5;
+
+	}
+
+	.testimonial figcaption{
+
+		font-size: 1.5rem;
+
+	}
 
 	.content__block{
 
@@ -642,6 +674,7 @@ a.contact__btn{
 
 	.content-cta__description{
 
+		font-size: 1rem;
 		padding: 2rem;
 
 	}
@@ -676,3 +709,23 @@ a.contact__btn{
 	}
 
 }
+
+@media only screen and (min-width: 1281px){
+
+	.hero--covid{
+
+		background-position: left -30% top 0px;
+
+	}
+
+	.testimonial blockquote{
+
+		font-size: 2.625rem;
+		line-height: 1.3125;
+
+	}
+
+
+
+}
+
