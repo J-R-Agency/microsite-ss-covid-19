@@ -26,6 +26,7 @@
 
 
 /* Mobile-first */
+
 html, body {
 	
 	overflow-x: hidden;
@@ -138,6 +139,7 @@ address{
 
 	display: block;
 	color: #fff;
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 	text-decoration: none;
 	background-color: #ec4f5f; 
 	border-radius: 0.25em;
@@ -345,11 +347,13 @@ a.contact__btn{
 	color: #fff;
 	display: inline-block;
 	background-color: #61c6fb; 
+	text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 	border-radius: 0.25em;
 	font-weight: bold;
 	padding: 0.5rem 1rem;
 	width: 10rem;
 	text-align: center;
+
 }
 
 
