@@ -67,13 +67,30 @@ h2 {
 
 blockquote{
 
+	font-style: italic;
+}
+
+blockquote:before{
+	
+	content: '\201C';
+    position: absolute;
+    margin-left: -.4em;
+
+}
+
+blockquote:after{
+	
+	content: '\201D';
+    position: absolute;
+    margin-right: -.4em;
+
 }
 
 figcaption{
 
-	font-weight: bold;
-	margin-bottom: 3.5rem;
-
+	font-weight: 400;
+/*	margin-bottom: 3.5rem;
+*/
 }
 
 
@@ -102,8 +119,30 @@ address{
 
 	flex-basis: 67%;
 	flex-grow: 2;
+	text-align: right;
 
 }
+
+.header__nav-primary ul {
+
+}
+
+.header__nav-primary ul li {
+
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1.5rem;
+
+
+}
+
+.header__nav-primary ul li a{
+
+	text-decoration: none;
+	color: #398287;
+
+}
+
 
 .header__nav-login{
 
@@ -130,7 +169,7 @@ address{
 
 .login__cta{
 
-	font-size: 1.3125rem;
+	font-size: 1.1rem;
 	font-weight: 400;
 
 }
@@ -141,19 +180,21 @@ address{
 	color: #fff;
 	text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 	text-decoration: none;
-	background-color: #ec4f5f; 
+	background-color: #ec4f5f;
+	background-color: #da1823;
+/*	background-color: #ad0102; */	
 	border-radius: 0.25em;
 	font-size: 1.3125rem;
-	font-weight: bold;
-	margin: 0 0 0 2rem;
-	padding: 0.5rem 1rem;
+	font-weight: 500;
+	margin: 0 0 0 2rem;	
+	padding: 0.25rem 1rem;
 
 
 }
 
 .login__btn:hover{
 
-	color: #235558;
+	color: #ffffff;
 
 }
 
@@ -168,13 +209,11 @@ address{
 .hero--covid{
 
 	background-color: #703d9a;
-	background-image: url('../assets/bg/bg-keyline-white-a.png');
+	background-image: url('../assets/bg/bg-keyline-white-a-25.png');
 	background-position: left -50% top 0px;
 	background-repeat: no-repeat;
 
 }
-
-
 
 .hero__body{
 
@@ -190,13 +229,35 @@ address{
 
 }
 
+.hero__title{
+
+	margin-bottom: 0.5rem;
+
+}
+
+h2.hero__subtitle{
+
+	font-size: 2.1rem;
+	font-weight: 400;
+	margin-top: 0;
+
+}
+
 .hero__img{
 
 	display: block;
+	border-radius: 0.5rem;
 
 }
 
 .testimonial{
+
+}
+
+.testimonial__block{
+
+	padding: 1rem;
+	background-color: #f5f5f5;
 
 }
 
@@ -210,9 +271,43 @@ address{
 
 .testimonial figcaption{
 
-	font-weight: bold;
-	font-size: 1.75rem;
+	font-weight: 400;
+	font-size: 1rem;
 	text-align: right;
+
+}
+
+
+
+.content-list{
+
+	text-align: left;
+	font-size: 1.2rem;
+	list-style-type: none;
+	padding: 1rem 0rem;
+
+}
+
+.content-list li{
+
+	margin-bottom: 1rem;
+	padding-left: 2.5rem;
+
+	line-height: 1.65rem;
+
+	min-height: 2rem;
+
+	background-image: url('../assets/icons/icon-tick.svg');
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+	background-position: left 0rem;
+
+}
+
+.content-list li:last-child{
+
+	margin-bottom: 0;
+
 }
 
 .content-feature__block{
@@ -290,11 +385,11 @@ address{
 	color: #fff;
 
 	background-color: #398287;
-	background-image: url('../assets/bg/bg-keyline-white-b.png');
+	background-image: url('../assets/bg/bg-keyline-white-b-25.png');
 	background-position: right -30% top 30%;
 	background-repeat: no-repeat;
 	min-height: 865px;
-	padding: 4rem 0;
+	padding: 4rem 0 0rem 0;
 
 }
 
@@ -306,6 +401,14 @@ address{
 
 }
 
+
+.content-cta__icon{
+
+	height: 180px;
+	padding: 1rem;
+	box-sizing: border-box;
+
+}
 
 
 .contact-cta__block{
@@ -347,16 +450,30 @@ a.contact__btn{
 	color: #fff;
 	display: inline-block;
 	background-color: #61c6fb; 
+	background-color: #0D5D82;
+	background-color: #235558;
 	text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 	border-radius: 0.25em;
 	font-weight: bold;
 	padding: 0.5rem 1rem;
+	margin: 1rem 0;
 	width: 10rem;
 	text-align: center;
 
 }
 
+a.contact__btn:hover{
 
+	color: #ffffff;
+
+}
+
+.contact-cta__block h2, .contact-cta__block p {
+
+	margin: 1rem 0;
+	padding: 0;
+
+}
 
 .footer{
 
@@ -380,7 +497,14 @@ a.contact__btn{
 
 .footer__logo {
 
+	margin-top: 1rem;
 	margin-bottom: 2rem;
+
+}
+
+.footer__logo img {
+
+	height: 2.5rem;
 
 }
 
@@ -427,13 +551,13 @@ a.contact__btn{
 	.hero__title, .hero__body h1{
 
 		margin: 0;
-		padding: 2rem 0;
+		padding: 2rem 0 1rem 0;
 
 	}
 	.hero__subtitle{
 
 		margin: 0;
-		padding: 2rem 2rem;
+		padding: 1rem 2rem 1rem;
 
 	}
 	.hero__img {
@@ -446,7 +570,7 @@ a.contact__btn{
 	.content__block{
 
 		box-sizing: border-box;
-		padding: 2rem;
+		padding: 0rem 0rem;
 
 	}
 
@@ -460,7 +584,7 @@ a.contact__btn{
 
 	.testimonial figcaption{
 
-		font-size: 1.3125rem;
+		font-size: 1rem;
 
 	}
 
@@ -481,9 +605,29 @@ a.contact__btn{
 
 	}
 
+
+	.content-list{
+
+		padding: 1rem 0rem;
+
+	}
+
+	.content-list li{
+
+		margin-bottom: 1rem;
+		padding-left: 2.5rem;
+
+	}
+
+	.content-list li:last-child{
+
+		margin-bottom: 0;
+
+	}
+
 	.content__copy{
 
-		padding: 0 2rem 2rem 2rem;
+		padding: 0 2rem 0 2rem;
 
 	}
 
@@ -546,7 +690,7 @@ a.contact__btn{
 	.hero--covid{
 
 		background-color: #703d9a;
-		background-image: url('../assets/bg/bg-keyline-white-a.png');
+		background-image: url('../assets/bg/bg-keyline-white-a-25.png');
 		background-position: left -70% top 0px;
 		background-repeat: no-repeat;
 
@@ -560,12 +704,24 @@ a.contact__btn{
 
 	}
 
+	.hero__img-container {
+
+ 		padding-bottom: 3.625rem;
+
+	}
+
 	.hero__img {
 
 	 	width: 80vw;
 
 	}
 
+
+	.testimonial__block{
+
+		padding: 1rem 5rem;
+
+	}
 
 	.testimonial blockquote{
 
@@ -576,7 +732,7 @@ a.contact__btn{
 
 	.testimonial figcaption{
 
-		font-size: 1.5rem;
+		font-size: 1.265rem;
 
 	}
 
@@ -684,6 +840,26 @@ a.contact__btn{
 	}
 
 
+
+	.content-list{
+
+		padding: 1rem 3rem;
+
+	}
+
+	.content-list li{
+
+		margin-bottom: 1rem;
+		padding-left: 2.5rem;
+
+	}
+
+	.content-list li:last-child{
+
+		margin-bottom: 0;
+
+	}
+
 	.content-feature__body{
 		width: 680px ;
 	}
@@ -722,18 +898,57 @@ a.contact__btn{
 
 	}
 
+	.hero__img-container{
+
+		 padding:0;
+		 margin:0;
+ 		padding-bottom: 3.625rem;
+
+	}
+
+	.hero__img{
+
+		border-radius: 0.5rem;
+
+	}
+
+	.testimonial__block{
+
+		padding: 1rem 6rem;
+
+	}
+
 	.testimonial blockquote{
 
-		font-size: 2.625rem;
-		line-height: 1.3125;
+		font-size: 2rem;
+		line-height: 2.625rem;
 
 	}
 
 
 	.content-cta__description{
 
-		font-size: 1.75rem;
+		font-size: 1.3125rem;
 		padding: 2rem;
+
+	}
+
+	.content-list{
+
+		padding: 1rem 10rem;
+
+	}
+
+	.content-list li{
+
+		margin-bottom: 1rem;
+		padding-left: 2.5rem;
+
+	}
+
+	.content-list li:last-child{
+
+		margin-bottom: 0;
 
 	}
 
